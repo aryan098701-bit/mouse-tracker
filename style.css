@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1f2937;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 8px 0;
+    color: #d1d5db;
+}
+
+.card span {
+    color: white;
+    font-weight: bold;
+}
+
+.test-area {
+    position: relative;
+    height: 400px;
+    margin-top: 25px;
+    border: 2px dashed #6b7280;
+    border-radius: 12px;
+    background: #0f172a;
+    text-align: center;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.test-area h2 {
+    margin-bottom: 10px;
+}
+
+.test-area p {
+    color: #9ca3af;
+}
+
+#cursorDot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.log-section {
+    margin-top: 25px;
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b5563;
+}
+
+#eventLog {
+    height: 250px;
+    overflow-y: auto;
+    background: #111827;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.log-entry {
+    padding: 5px 0;
+    border-bottom: 1px solid #374151;
+}

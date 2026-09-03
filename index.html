@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Diagnostic Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🖱️ Mouse Diagnostic Tool</h1>
+        <p>Test and monitor your mouse in real time.</p>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h2>Mouse Position</h2>
+                <p>X: <span id="mouseX">0</span></p>
+                <p>Y: <span id="mouseY">0</span></p>
+            </div>
+
+            <div class="card">
+                <h2>Click Statistics</h2>
+                <p>Total Clicks: <span id="clickCount">0</span></p>
+                <p>Left: <span id="leftClicks">0</span></p>
+                <p>Middle: <span id="middleClicks">0</span></p>
+                <p>Right: <span id="rightClicks">0</span></p>
+            </div>
+
+            <div class="card">
+                <h2>Mouse Status</h2>
+                <p>Button: <span id="buttonStatus">None</span></p>
+                <p>Event: <span id="eventStatus">None</span></p>
+            </div>
+
+        </section>
+
+        <section class="test-area" id="testArea">
+            <h2>Mouse Test Area</h2>
+            <p>Move your mouse and click inside this area.</p>
+
+            <div id="cursorDot"></div>
+        </section>
+
+        <section class="log-section">
+
+            <div class="log-header">
+                <h2>Event Log</h2>
+                <button id="resetButton">Reset</button>
+            </div>
+
+            <div id="eventLog"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
